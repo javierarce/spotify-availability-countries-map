@@ -53,3 +53,6 @@ html, body, #map {
   background-color: #96d600;
   border-color: #96d600;
 }
+p {
+  margin: 0 0 10px 0;
+}

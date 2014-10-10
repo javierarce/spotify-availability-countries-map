@@ -1,4 +1,6 @@
-function main(markets) {
+
+function generateMap(markets) {
+
   var map = new L.Map('map', {
     center: [40.4333, 3.7000],
     zoom: 2
@@ -21,7 +23,7 @@ function main(markets) {
 
     layer.createSubLayer({
       sql: sql,
-      cartocss: '#countries {polygon-fill: #81b900;}'
+      cartocss: '#countries { polygon-fill: #81b900; }'
     });
 
   });
@@ -43,7 +45,8 @@ $(function() {
       var countries = _.pluck(tracks, "available_markets");
 
       var markets = _.union.apply(null, countries);
-      main(markets);
+
+      generateMap(markets);
 
     }});
 
