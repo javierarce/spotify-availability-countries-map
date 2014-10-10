@@ -26,8 +26,8 @@ passport.deserializeUser(function(obj, done) {
 
 // Use the SpotifyStrategy within Passport.
 passport.use(new SpotifyStrategy({
-  clientID: Config.appKey,
-  clientSecret: Config.appSecret,
+  clientID: Config.clientID,
+  clientSecret: Config.clientSecret,
   callbackURL: Config.callbackURL
 },
 function(accessToken, refreshToken, profile, done) {
