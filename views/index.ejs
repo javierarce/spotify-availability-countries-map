@@ -1,0 +1,17 @@
+{% extends 'layout.ejs' %}
+
+{% block content %}
+{% if !user %}
+<div class="content">
+  <a class="button" href="/auth/spotify">Login with Spotify</a>
+</div>
+{% else %}
+<div class="content">
+  <p>
+    Hello, {{ user.username }}.
+  </p>
+  <a href="#" class="button get-albums-js">Get albums</a>
+</div>
+{% endif %}
+<div id="map"></div>
+{% endblock %}

@@ -1,0 +1,55 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222326;
+  background-color: #f8f8f8;
+}
+html, body, #map {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 100;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 25px 6px;
+  text-transform: uppercase;
+  border-width: 1px;
+  letter-spacing: 1px;
+  white-space: normal;
+  margin: 0 0 1em;
+  background-color: #81b900;
+  border-color: #81b900;
+}
+.button:hover {
+  background-color: #96d600;
+  border-color: #96d600;
+}
